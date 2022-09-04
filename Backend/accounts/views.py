@@ -13,10 +13,6 @@ from .models import Users
 from Eatpository import settings
 
 
-import random
-import string
-
-
 #from Eatpository.settings import JWT_ALGORITHM, JWT_SECRET_KEY
 # Create your views here.
 @api_view(['POST'])
@@ -77,8 +73,6 @@ def signup(request):
             phone_number=phone_number,
             role=False)
         user.save()
-
-        auth.login(request, user)
 
         return Response({"message": "회원가입 성공"})
 

@@ -12,14 +12,13 @@ from django.http import JsonResponse
 import requests
 from .secrets import KAKAO_API_KEY
 import json
-import selenium
-from selenium import webdriver
+
 from urllib.request import urlopen
-from selenium.webdriver.common.keys import Keys
+
 import time
 import urllib.request
 import os
-from selenium.webdriver.common.by import By
+
 from Eatpository.settings import SECRET_KEY
 import jwt
 
