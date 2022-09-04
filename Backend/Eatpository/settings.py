@@ -30,7 +30,7 @@ ROOT_DIR = os.path.dirname(BASE_DIR)
 SECRET_KEY = MY_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
