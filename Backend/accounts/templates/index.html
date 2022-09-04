@@ -1,0 +1,9 @@
+
+{%if user.is_authenticated%}
+<a href ="http://127.0.0.1:8000/users/logout" method = "GET">로그 아웃</a>
+{%endif%}
+
+{%if  not user.is_authenticated%}
+<a href ="http://127.0.0.1:8000/users/signup" method = "GET">회원 가입</a><br>
+<a href ="http://127.0.0.1:8000/users/login" method = "GET">로그인</a>
+{%endif%}

@@ -1,0 +1,9 @@
+
+<form method = "POST" action = "">
+    {% csrf_token %}
+    <input type="text" value = "id" name="user_id">
+    <input type="password" value = "password" name = "password">
+    <input type="tel" value = "phone_number" name = "phone_number">
+    <br><br>
+    <input type="submit" value = "회원가입">
+</form>

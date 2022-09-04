@@ -1,0 +1,205 @@
+<head>
+    <meta charset="utf-8">
+</head>
+검색된 식당 이름 : {{info.store_name}} <br>
+검색된 식당의 주소 : {{info.address}} <br><br>
+
+<h1>식당 정보 저장을 원하는 경우</h1><br>
+<form method = "POST" action = "http://15.165.226.61:3000/stores/save/">
+    {% csrf_token %}
+    {% load static %}
+    <h1 >밑에꺼 건드리지 마 <h1/>
+    <textarea name="info">{{info}}</textarea> 
+    <textarea name="image">{{image}}</textarea> 
+    <!-- <input type="text" value = {{info.store_name}} name="store_name">
+    <input type="text" value = {{info.address}} name="address">
+    <input type="text" value = {{info.longitude}} name="longitude">
+    <input type="text" value = {{info.latitude}} name="latitude">
+    <input type="text" value = {{info.phone_number}} name="phone_number"> -->
+    <br><br>넣아줘야 함<br>
+    <input type="text" value = "영업 시간" name="time">
+    <input type="text" value = "메뉴" name="main_menu">
+    <textarea name="comment">식당에 대한 에디터 comment</textarea> 
+    <select name="user">
+        <option value="admin1">admin1</option>
+        <option value="admin2">admin2</option>
+        <option value="admin3">admin3</option>
+        <option value="admin4">admin4</option>
+    </select>
+    <select name="category">
+        <option value="한식">한식</option>
+        <option value="중식">중식</option>
+        <option value="일식">일식</option>
+        <option value="양식">양식</option>
+    </select>
+    <select name="image1">
+        <option value="1">이미지1</option>
+        <option value="2">이미지2</option>
+        <option value="3">이미지3</option>
+        <option value="4">이미지4</option>
+        <option value="5">이미지5</option>
+        <option value="6">이미지6</option>
+        <option value="7">이미지7</option>
+        <option value="8">이미지8</option>
+        <option value="9">이미지9</option>
+        <option value="10">이미지10</option>
+        <option value="11">이미지11</option>
+        <option value="12">이미지12</option>
+        <option value="13">이미지13</option>
+        <option value="14">이미지14</option>
+        <option value="15">이미지15</option>
+        <option value="16">이미지16</option>
+        <option value="17">이미지17</option>
+        <option value="18">이미지18</option>
+        <option value="19">이미지19</option>
+        <option value="20">이미지20</option>
+    </select>
+    <select name="image2">
+        <option value="1">이미지1</option>
+        <option value="2">이미지2</option>
+        <option value="3">이미지3</option>
+        <option value="4">이미지4</option>
+        <option value="5">이미지5</option>
+        <option value="6">이미지6</option>
+        <option value="7">이미지7</option>
+        <option value="8">이미지8</option>
+        <option value="9">이미지9</option>
+        <option value="10">이미지10</option>
+        <option value="11">이미지11</option>
+        <option value="12">이미지12</option>
+        <option value="13">이미지13</option>
+        <option value="14">이미지14</option>
+        <option value="15">이미지15</option>
+        <option value="16">이미지16</option>
+        <option value="17">이미지17</option>
+        <option value="18">이미지18</option>
+        <option value="19">이미지19</option>
+        <option value="20">이미지20</option>
+    </select>
+    <select name="image3">
+        <option value="1">이미지1</option>
+        <option value="2">이미지2</option>
+        <option value="3">이미지3</option>
+        <option value="4">이미지4</option>
+        <option value="5">이미지5</option>
+        <option value="6">이미지6</option>
+        <option value="7">이미지7</option>
+        <option value="8">이미지8</option>
+        <option value="9">이미지9</option>
+        <option value="10">이미지10</option>
+        <option value="11">이미지11</option>
+        <option value="12">이미지12</option>
+        <option value="13">이미지13</option>
+        <option value="14">이미지14</option>
+        <option value="15">이미지15</option>
+        <option value="16">이미지16</option>
+        <option value="17">이미지17</option>
+        <option value="18">이미지18</option>
+        <option value="19">이미지19</option>
+        <option value="20">이미지20</option>
+    </select>
+    <!-- <input type="file" value = "이미지1" name="image1">
+    <input type="file" value = "이미지2" name="image2"> -->
+    <br><br>
+    
+    <figure>
+        <figcaption>
+            Image 1
+        </figcaption>
+        <img src="{{image.1}}" width="200">
+        <figcaption>
+            Image 2
+        </figcaption>
+        <img src="{{image.2}}" width="200">
+        <figcaption>
+            Image 3
+        </figcaption>
+        <img src="{{image.3}}" width="200">
+        <figcaption>
+            Image 4
+        </figcaption>
+        <img src="{{image.4}}" width="200">
+        <figcaption>
+            Image 5
+        </figcaption>
+        <img src="{{image.5}}" width="200">
+        <figcaption>
+            Image 6
+        </figcaption>
+        <img src="{{image.6}}" width="200">
+        <figcaption>
+            Image 7
+        </figcaption>
+        <img src="{{image.7}}" width="200">
+        <figcaption>
+            Image 8
+        </figcaption>
+        <img src="{{image.8}}" width="200">
+        <figcaption>
+            Image 9
+        </figcaption>
+        <img src="{{image.9}}" width="200">
+        <figcaption>
+            Image 10
+        </figcaption>
+        <img src="{{image.10}}" width="200">
+        <!-- <figcaption>
+            Image 11
+        </figcaption>
+        <img src="{{image.11}}" width="200">
+        <figcaption>
+            Image 12
+        </figcaption>
+        <img src="{{image.12}}" width="200">
+        <figcaption>
+            Image 13
+        </figcaption>
+        <img src="{{image.13}}" width="200">
+        <figcaption>
+            Image 14
+        </figcaption>
+        <img src="{{image.14}}" width="200">
+        <figcaption>
+            Image 15
+        </figcaption>
+        <img src="{{image.15}}" width="200">
+    </figure> -->
+
+    
+    <!-- <img src="{{image.1}}" width="200">
+    <img src="{{image.2}}" width="200">
+    <img src="{{image.3}}" width="200">
+    <img src="{{image.4}}" width="200">
+    <img src="{{image.5}}" width="200">
+    <img src="{{image.6}}" width="200">
+    <img src="{{image.7}}" width="200">
+    <img src="{{image.8}}" width="200">
+    <img src="{{image.9}}" width="200">
+    <img src="{{image.10}}" width="200">
+    <img src="{{image.11}}" width="200">
+    <img src="{{image.12}}" width="200">
+    <img src="{{image.13}}" width="200">
+    <img src="{{image.14}}" width="200">
+    <img src="{{image.15}}" width="200">
+    <img src="{{image.16}}" width="200">
+    <img src="{{image.17}}" width="200">
+    <img src="{{image.18}}" width="200">
+    <img src="{{image.19}}" width="200">
+    <img src="{{image.20}}" width="200"> -->
+
+
+    <br><br>
+    <input type="submit" value = "식당 저장하기">
+</form>
+
+<br><br>
+<h2>식당 재검색</h2><br>
+<form method = "POST" action = "http://15.165.226.61:8000/stores/edit/">
+    {% csrf_token %}
+    <input type="text" value = "식당 이름" name="store_name">
+    <!-- <input type="text" value = "운영 시간" name="time">
+    <input type="file" value = "이미지1" name="image1">
+    <input type="file" value = "이미지2" name="image2"> -->
+    <br><br>
+    <input type="submit" value = "검색!">
+</form>

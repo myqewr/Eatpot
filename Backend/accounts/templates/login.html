@@ -1,0 +1,11 @@
+
+<form method = "POST" action = "">
+    {% csrf_token %}
+    <input type="text" value = "id" name="user_id">
+    <input type="password" value = "password" name = "password">
+    <br><br>
+    <input type="submit" value = "로그인">
+</form>
+<br>
+<a href ="http://127.0.0.1:8000/users/signup" method = "GET">회원 가입</a>
+<h2>{{error}}</h2>
